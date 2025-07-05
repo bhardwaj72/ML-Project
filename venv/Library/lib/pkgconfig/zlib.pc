@@ -1,0 +1,13 @@
+prefix=D:/udemy DS/ML_Proj/venv/Library
+exec_prefix=D:/udemy DS/ML_Proj/venv/Library
+libdir=D:/udemy DS/ML_Proj/venv/Library/lib
+sharedlibdir=D:/udemy DS/ML_Proj/venv/Library/lib
+includedir=D:/udemy DS/ML_Proj/venv/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
