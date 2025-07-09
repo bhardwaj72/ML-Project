@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>✨ Math World — AI Powered</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"/>
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #000; /* Set solid black background */
+      color: #f2f2f2;
+    }
+
+    .overlay-content {
+      z-index: 10;
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      font-weight: 800;
+      color: #ffffff;
+      text-shadow: 0 0 20px #e50914;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: #ddd;
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn-custom {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      padding: 0.6rem 2rem;
+      color: #f2f2f2;
+      background-color: #e50914;
+      border: none;
+      border-radius: 30px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn-custom:hover {
+      background-color: transparent;
+      color: #e50914;
+      border: 2px solid #e50914;
+      box-shadow: 0 0 10px #e5091480;
+    }
+
+    .ml-algos {
+      width: 100%;
+      padding: 1rem 2rem;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: #ccc;
+      border-top: 1px solid #444;
+    }
+
+    .ml-box {
+      padding: 0.4rem 0.8rem;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      border: 1px solid #333;
+      box-shadow: 0 0 5px #111;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    @media (max-width: 576px) {
+      h1 { font-size: 2.5rem; }
+      h2 { font-size: 1.2rem; }
+      .btn-custom { width: 100%; padding: 0.8rem; font-size: 1rem; }
+      .ml-algos { flex-direction: column; align-items: center; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay-content">
+    <h1>Welcome to the World of Mathematics</h1>
+    <h2>Predict Exam Scores Using Smart AI Algorithms</h2>
+    <a href="http://127.0.0.1:5000/predictdata" class="btn btn-custom">Get Started</a>
+  </div>
+
+  <div class="ml-algos">
+    <div class="ml-box">Linear Regression: Simple trend lines</div>
+    <div class="ml-box">Random Forest: Many decision trees</div>
+    <div class="ml-box">Decision Tree: Branch-based logic</div>
+    <div class="ml-box">Gradient Boosting: Layered improvements</div>
+    <div class="ml-box">XGBoost: Fast & accurate boosting</div>
+    <div class="ml-box">CatBoost: Handles categories well</div>
+    <div class="ml-box">AdaBoost: Focuses on hard cases</div>
+  </div>
+</body>
+</html>
