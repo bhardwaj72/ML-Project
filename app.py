@@ -1,6 +1,9 @@
 from flask import Flask,request,render_template
 import numpy as np
 import pandas as pd
+import os
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 
 from sklearn.preprocessing import StandardScaler
 from src.pipeline.predict_pipeline import CustomData,PredictPipeline
